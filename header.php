@@ -9,6 +9,16 @@
 </head>
 <body>
     <div class="container-fluid">
+        <div class="row nav-menu">
+            <div class="col">
+                <?php
+                $args = array(
+                    'theme_location' => 'primary'
+                );
+                ?>
+                <?php wp_nav_menu( $args); ?>
+            </div>
+        </div>
 
 
 
