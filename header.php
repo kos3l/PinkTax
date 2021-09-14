@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row nav-menu">
+        <div class="row nav-menu d-none d-lg-block">
             <div class="col">
                 <?php
                 $args = array(
