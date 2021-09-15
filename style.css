@@ -12,6 +12,7 @@ body {
   background-color: #f2f5fd;
   color: #eb6083;
   font-family: "Raleway", sans-serif;
+  letter-spacing: 3px;
   height: 300vh;
 }
 /* navigation */
@@ -38,7 +39,7 @@ body {
   text-decoration: none;
   color: #eb6083;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .bottom-menu {
@@ -71,8 +72,11 @@ body {
 }
 /* home page */
 
+.main {
+  height: 85vh;
+}
 .content {
-  padding: 3rem 7rem 7rem 7rem;
+  padding: 6rem 7rem 0 7rem;
 }
 
 .col-6 h1 {
@@ -88,8 +92,10 @@ body {
   margin-top: 2rem;
 }
 
-/* subpage */
-
+/* subpage section 1 */
+.upper {
+  height: 60vh;
+}
 .subpage {
   padding: 3rem 6rem 5rem 7rem;
 }
@@ -104,10 +110,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin-left: 4rem;
 }
 
 .scroll-container img {
-  width: 80px;
+  width: 50px;
 }
 .scroll-text {
   display: flex;
@@ -116,6 +123,53 @@ body {
 }
 .scroll-text p {
   margin: 0 0 0 3rem;
-  font-size: 38px;
+  font-size: 33px;
   font-weight: 200;
+}
+.bar {
+  display: flex;
+  align-items: center;
+}
+.bar-inner {
+  margin-left: 1.5rem;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.bar .bar-inner img {
+  width: 40px;
+}
+#shirt {
+  width: 85px;
+}
+.bar-text p {
+  margin-left: 4rem;
+  height: 100%;
+  color: #f2f5fd;
+  letter-spacing: 4px;
+  font-size: 4rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+/* subpage section 2 */
+
+.section {
+  padding: 3rem 7rem 3rem 5rem;
+}
+.title {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 40px;
+  margin: 0;
+}
+.intro {
+  color: #b4b9bf;
+  font-size: 20px;
+}
+.body-text {
+  font-size: 16px;
 }
