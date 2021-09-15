@@ -1,4 +1,4 @@
-    <div class="row nav-menu d-lg-none" >
+    <div class="row bottom-menu d-lg-none" >
         <div class="col">
                 <?php
                 $args = array(

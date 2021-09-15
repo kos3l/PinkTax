@@ -10,7 +10,7 @@
 <body>
     <div class="container-fluid">
         <div class="row nav-menu d-none d-lg-block">
-            <div class="col">
+            <div class="col head">
                 <?php
                 $args = array(
                     'theme_location' => 'primary'

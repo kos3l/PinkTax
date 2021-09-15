@@ -12,16 +12,20 @@ body {
   background-color: #f2f5fd;
   color: #eb6083;
   font-family: "Raleway", sans-serif;
+  height: 300vh;
 }
+/* navigation */
 .nav-menu {
-  background-color: #f2f5fd;
   border-bottom: #eb6083 solid 2px;
   height: 7rem;
-  padding: 0 10rem 0 10rem;
+  padding: 0 7rem 0 7rem;
 }
+
+.head,
 .menu-primary-container,
 .menu {
   height: 100%;
+  padding: 0;
 }
 .menu-primary-container ul {
   list-style-type: none;
@@ -35,4 +39,51 @@ body {
   color: #eb6083;
   font-weight: 400;
   font-size: 1.5rem;
+}
+
+.bottom-menu {
+  border-top: #eb6083 solid 2px;
+  height: 5rem;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+}
+.bottom-menu .col {
+  padding: 0;
+}
+.menu-bottom-menu-container {
+  height: 100%;
+  width: 100%;
+}
+.menu-bottom-menu-container ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-bottom-menu-container ul li a {
+  text-decoration: none;
+  color: #eb6083;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+/* home page */
+
+.content {
+  padding: 3rem 7rem 7rem 7rem;
+}
+
+.col-6 h1 {
+  margin-bottom: 1rem;
+}
+.color-bar {
+  background-color: #eb6083;
+  height: 11.7rem;
+}
+
+.logo {
+  width: 250px;
+  margin-top: 2rem;
 }
