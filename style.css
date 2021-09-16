@@ -173,6 +173,9 @@ body {
   color: #b4b9bf;
   font-size: 20px;
 }
+#white {
+  color: #f2f5fd;
+}
 .body-text {
   font-size: 16px;
 }
@@ -208,6 +211,10 @@ body {
   width: 100vw;
   margin-top: 5rem;
   padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .headline-column {
   height: 100%;
@@ -228,9 +235,14 @@ body {
   width: 100vw;
   height: 11.7rem;
 }
+.last-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .last {
-  margin: 3rem;
-  margin-top: 4rem;
+  margin: 4rem 3rem 3rem 3rem;
 }
 @media only screen and (max-width: 960px) {
   body {

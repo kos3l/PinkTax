@@ -29,14 +29,14 @@
                         <div class="col-lg-6" id="mobile-img" style="background-image: url(<?php the_field('main_image'); ?>);background-size:cover;background-position:80% 100%"></div>
                         <div class="col-lg-6 section">
                             <p class="title"><?php the_field('main-text') ?></p>
-                            <p class="intro"><?php the_field('intro') ?></p>
+                            <p class="intro" ><?php the_field('intro') ?></p>
                             <p class="body-text"><?php the_field('body') ?></p>
                         </div>
                     </div>
                     <div class="row content-box">
                         <div class="col-lg-6 background section">
                             <p class="title"><?php the_field('main-text1') ?></p>
-                            <p class="intro"><?php the_field('intro1') ?></p>
+                            <p class="intro" id="white"><?php the_field('intro1') ?></p>
                             <p class="body-text"><?php the_field('body1') ?></p>
                         </div>
                         <div class="col-lg-6 gallery">
@@ -64,10 +64,10 @@
                         <div class="col-lg-6" style="width:100vw;height:100%;background-image: url(<?php the_field('banner_image'); ?>);background-size:cover;background-position:80% 70%"></div>
                     </div>
                     <div class="row last-content">
-                        <div class="col-lg-6 last">
+                        <div class="col-lg-5 last">
                             <p class="body-text"><?php the_field('text_column_1') ?></p>
                         </div>
-                        <div class="col-lg-6 last">
+                        <div class="col-lg-5 last">
                             <p class="body-text"><?php the_field('text_column_2') ?></p>
                         </div>
                     </div>
