@@ -25,14 +25,44 @@
                             <p><?php the_field('color_bar_text') ?></p>
                         </div>
                     </div>
-                    <div class="row main">
-                        <div class="col-6" style="background-image: url(<?php the_field('main_image'); ?>);background-size:cover;background-position:80% 100%"></div>
+                    <div class="row content-box">
+                        <div class="col-6 section" style="background-image: url(<?php the_field('main_image'); ?>);background-size:cover;background-position:80% 100%"></div>
                         <div class="col-6 section">
                             <p class="title"><?php the_field('main-text') ?></p>
                             <p class="intro"><?php the_field('intro') ?></p>
                             <p class="body-text"><?php the_field('body') ?></p>
-
                         </div>
+                    </div>
+                    <div class="row content-box">
+                        <div class="col-6 background section">
+                            <p class="title"><?php the_field('main-text') ?></p>
+                            <p class="intro"><?php the_field('intro') ?></p>
+                            <p class="body-text"><?php the_field('body') ?></p>
+                        </div>
+                        <div class="col-6 gallery">
+                            <div class="gallery-content">
+                                <div class="box-1">
+                                    <img src="<?php the_field('picture_1') ?>" alt="">
+                                    <img src="<?php the_field('picture_2') ?>" alt="">
+                                    <img src="<?php the_field('picture_3') ?>" alt="">
+                                </div>
+                                <div class="box-2">
+                                    <img src="<?php the_field('picture_4') ?>" alt="">
+                                    <img src="<?php the_field('picture_5') ?>" alt="">
+                                    <img src="<?php the_field('picture_6') ?>" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row headline">
+                        <div class="col"></div>
+                    </div>
+                    <div class="row bg-image">
+                        <div class="col"></div>
+                    </div>
+                    <div class="row last-content">
+                        <div class="col"></div>
+                        <div class="col"></div>
                     </div>
 
                 <?php endwhile; ?>
