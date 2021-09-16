@@ -26,7 +26,7 @@
                         </div>
                     </div>
                     <div class="row content-box">
-                        <div class="col-lg-6 section" style="background-image: url(<?php the_field('main_image'); ?>);background-size:cover;background-position:80% 100%"></div>
+                        <div class="col-lg-6" id="mobile-img" style="background-image: url(<?php the_field('main_image'); ?>);background-size:cover;background-position:80% 100%"></div>
                         <div class="col-lg-6 section">
                             <p class="title"><?php the_field('main-text') ?></p>
                             <p class="intro"><?php the_field('intro') ?></p>
