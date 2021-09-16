@@ -35,9 +35,9 @@
                     </div>
                     <div class="row content-box">
                         <div class="col-6 background section">
-                            <p class="title"><?php the_field('main-text') ?></p>
-                            <p class="intro"><?php the_field('intro') ?></p>
-                            <p class="body-text"><?php the_field('body') ?></p>
+                            <p class="title"><?php the_field('main-text1') ?></p>
+                            <p class="intro"><?php the_field('intro1') ?></p>
+                            <p class="body-text"><?php the_field('body1') ?></p>
                         </div>
                         <div class="col-6 gallery">
                             <div class="gallery-content">
@@ -55,14 +55,21 @@
                         </div>
                     </div>
                     <div class="row headline">
-                        <div class="col"></div>
+                        <div class="col headline-column">
+                            <p class="title"><?php the_field('headline') ?></p>  <br>
+                            <p class="intro"><?php the_field('undertext') ?></p>
+                        </div>
                     </div>
                     <div class="row bg-image">
-                        <div class="col"></div>
+                        <div class="col" style="width:100vw;height:100%;background-image: url(<?php the_field('banner_image'); ?>);background-size:cover;background-position:80% 70%"></div>
                     </div>
                     <div class="row last-content">
-                        <div class="col"></div>
-                        <div class="col"></div>
+                        <div class="col last">
+                            <p class="body-text"><?php the_field('text_column_1') ?></p>
+                        </div>
+                        <div class="col last">
+                            <p class="body-text"><?php the_field('text_column_2') ?></p>
+                        </div>
                     </div>
 
                 <?php endwhile; ?>

@@ -160,7 +160,7 @@ body {
   height: auto;
 }
 .section {
-  padding: 3rem 7rem 3rem 5rem;
+  padding: 5rem;
 }
 .title {
   font-weight: bold;
@@ -198,4 +198,36 @@ body {
   width: 200px;
   height: 200px;
   margin: 3rem;
+}
+/* subpage section 4*/
+
+.headline {
+  border-top: #eb6083 solid 2px;
+  height: 11.7rem;
+  width: 100vw;
+  margin-top: 5rem;
+  padding-top: 5rem;
+}
+.headline-column {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bg-image {
+  height: 11.7rem;
+  width: 100vw;
+  margin-top: 3rem;
+}
+.bg-image .col {
+  padding: 0;
+}
+.bg-image .col img {
+  width: 100vw;
+  height: 11.7rem;
+}
+.last {
+  margin: 3rem;
+  margin-top: 4rem;
 }
