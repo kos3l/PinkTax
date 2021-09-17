@@ -92,6 +92,18 @@ body {
   width: 250px;
   margin-top: 2rem;
 }
+.section-home {
+  height: 90vh;
+}
+.section-home .col-lg-6 img {
+  width: 400px;
+}
+.section-img {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* subpage section 1 */
 .upper {
@@ -178,6 +190,12 @@ body {
 }
 .body-text {
   font-size: 16px;
+}
+.flex {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 /* subpage section 3*/
 .background {

@@ -12,6 +12,19 @@
                     <div class="row color-bar">
                         <div class="col"></div>
                     </div>
+                    <div class="row section-home">
+                        <div class="col-lg-6 section-img">
+                            <img src="<?php the_field('section_image') ?>" alt="">
+                        </div>
+                        <div class="col-lg-6 section" style="padding-left:0.5rem;padding-right:9.5rem;" >
+                            <div class="flex">
+                                <div class="title"><?php the_field('home_headline') ?></div>
+                                <div class="intro"><?php the_field('home_intro') ?></div>
+                                <div class="body-text" style="margin-top:1rem;"><?php the_field('home_body') ?></div>
+                            </div>
+                        </div>
+
+                    </div>
                 <?php endwhile; ?>
             <?php endif; ?>
 
