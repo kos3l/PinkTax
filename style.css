@@ -12,8 +12,9 @@ body {
   background-color: #f2f5fd;
   color: #eb6083;
   font-family: "Raleway", sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   height: 300vh;
+  font-weight: 300;
 }
 /* navigation */
 .nav-menu {
@@ -142,6 +143,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.card-container {
+  padding: 5rem;
+  padding-top: 3rem;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-end {
+  background-color: #eb6083;
+  color: #f2f5fd;
+  height: 300px;
+  padding: 3rem;
+  box-shadow: 0px 0px 10px #b4b9bf;
+}
+.card-end p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-align: center;
 }
 /* subpage section 1 */
 .upper {

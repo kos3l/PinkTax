@@ -52,6 +52,11 @@
                             <img src="<?php the_field('img3') ?>" alt="">
                         </div>
                     </div>
+                    <div class="row card-container">
+                        <div class="col-lg-9 card-end">
+                            <p><?php the_field('card_text') ?></p>
+                        </div>
+                    </div>
                 <?php endwhile; ?>
             <?php endif; ?>
 
