@@ -23,7 +23,34 @@
                                 <div class="body-text" style="margin-top:1rem;"><?php the_field('home_body') ?></div>
                             </div>
                         </div>
-
+                    </div>
+                    <div class="row display">
+                        <div class="col-lg-6 flex">
+                            <div class="title"><?php the_field('example_1') ?></div>
+                            <div class="intro" style="margin-bottom:3rem;"><?php the_field('example_intro_1') ?></div>
+                            <img src="<?php the_field('example_img_1') ?>"  alt="">
+                        </div>
+                        <div class="col-lg-6 flex left" >
+                            <div class="title"> <?php the_field('example_2') ?></div>
+                            <div class="intro"><?php the_field('example_intro_2') ?></div>
+                            <img src="<?php the_field('example_img_2') ?>" alt="">
+                        </div>
+                    </div>
+                    <div class="row color-bar">
+                        <div class="col">
+                            <div class="ban-headline"><?php the_field('banner_text_home') ?></div>
+                        </div>
+                    </div>
+                    <div class="row section-end">
+                        <div class="col-lg-4 img-collection">
+                            <img src="<?php the_field('img1') ?>" alt="">
+                        </div>
+                        <div class="col-lg-4 img-collection">
+                            <img src="<?php the_field('img2') ?>" alt="">
+                        </div>
+                        <div class="col-lg-4 img-collection">
+                            <img src="<?php the_field('img3') ?>" alt="">
+                        </div>
                     </div>
                 <?php endwhile; ?>
             <?php endif; ?>

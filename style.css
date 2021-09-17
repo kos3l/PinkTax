@@ -104,7 +104,45 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.display {
+  height: auto;
+  padding: 5rem;
+}
+.flex {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.left {
+  align-items: flex-end;
+}
+.display .flex img {
+  width: 500px;
+  margin-top: 2rem;
+}
+.ban-headline {
+  color: #f2f5fd;
+  font-weight: bold;
+  font-size: 60px;
+  letter-spacing: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.section-end {
+  padding: 5rem;
+  height: auto;
+}
+.section-end img {
+  width: 200px;
+}
+.img-collection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* subpage section 1 */
 .upper {
   height: 60vh;
@@ -191,12 +229,7 @@ body {
 .body-text {
   font-size: 16px;
 }
-.flex {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+
 /* subpage section 3*/
 .background {
   background-color: #eb6083;
