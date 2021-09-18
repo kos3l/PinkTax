@@ -16,7 +16,7 @@
                         <div class="col-lg-6 section-img">
                             <img src="<?php the_field('section_image') ?>" alt="">
                         </div>
-                        <div class="col-lg-6 section" style="padding-left:0.5rem;padding-right:9.5rem;" >
+                        <div class="col-lg-6 section" id="pad" >
                             <div class="flex">
                                 <div class="title"><?php the_field('home_headline') ?></div>
                                 <div class="intro"><?php the_field('home_intro') ?></div>
@@ -26,13 +26,13 @@
                     </div>
                     <div class="row display">
                         <div class="col-lg-6 flex">
-                            <div class="title"><?php the_field('example_1') ?></div>
-                            <div class="intro" style="margin-bottom:3rem;"><?php the_field('example_intro_1') ?></div>
+                            <div class="title mobile-center"><?php the_field('example_1') ?></div>
+                            <div class="intro mobile-center"  style="margin-bottom:3rem;"><?php the_field('example_intro_1') ?></div>
                             <img src="<?php the_field('example_img_1') ?>"  alt="">
                         </div>
                         <div class="col-lg-6 flex left" >
-                            <div class="title"> <?php the_field('example_2') ?></div>
-                            <div class="intro"><?php the_field('example_intro_2') ?></div>
+                            <div class="title mobile-center"> <?php the_field('example_2') ?></div>
+                            <div class="intro mobile-center" id="mob-mar"><?php the_field('example_intro_2') ?></div>
                             <img src="<?php the_field('example_img_2') ?>" alt="">
                         </div>
                     </div>
