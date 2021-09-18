@@ -8,7 +8,8 @@ add_action('wp_enqueue_scripts', "pinkTax_enqueue_styles" );
 
 register_nav_menus(array(
     'primary' => __( 'Primary Menu'),
-    'footer' => __( 'Footer Menu')
+    'footer' => __( 'Footer Menu'),
+    'subpage' => __( 'Subpage Menu')
 ));
 
 function wpb_add_google_fonts() {
@@ -16,4 +17,32 @@ function wpb_add_google_fonts() {
     }
     
     add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
-?>
+
+    function wpb_hook_javascript_footer() {
+        ?>
+            <script>
+                const home = document.getElementById('menu-item-209');
+                const subpage = document.getElementById('menu-item-205');
+                const mobileHome = document.getElementById('menu-item-210');
+                const mobileSubpage = document.getElementById('menu-item-211');
+
+                const currentStyleHome = function () {
+                    home.classList.add('nav-line');
+                    mobileHome.classList.add('nav-line');
+                }
+                const currentStyleSub = function () {
+                    subpage.classList.add('nav-line');
+                    mobileSubpage.classList.add('nav-line');
+                }
+
+                if (window.location.href == "http://localhost:8888/wp-site/") {
+                currentStyleHome();
+
+                } else if (window.location.href == "http://localhost:8888/wp-site/facts/") {
+                    currentStyleSub();
+                }
+
+            </script>
+        <?php
+    }
+add_action('wp_footer', 'wpb_hook_javascript_footer');

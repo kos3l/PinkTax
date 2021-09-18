@@ -20,7 +20,7 @@ body {
 .nav-menu {
   border-bottom: #eb6083 solid 2px;
   height: 7rem;
-  padding: 0 7rem 0 7rem;
+  padding: 0 5rem 0 5rem;
 }
 
 .head,
@@ -42,10 +42,16 @@ body {
   font-weight: 400;
   font-size: 1.2rem;
 }
-.menu-item-209 {
+#menu-item-209 {
   margin-left: 25px;
+  padding-bottom: 0.3rem;
 }
-
+#menu-item-210 {
+  padding-bottom: 0.3rem;
+}
+.nav-line {
+  border-bottom: 0.5px solid #eb6083;
+}
 .bottom-menu {
   border-top: #eb6083 solid 2px;
   background-color: #f2f5fd;
@@ -177,7 +183,7 @@ body {
   height: 60vh;
 }
 .subpage {
-  padding: 3rem 6rem 5rem 7rem;
+  padding: 3rem 6rem 5rem 5rem;
 }
 .scroll-container {
   display: flex;
@@ -201,11 +207,25 @@ body {
   flex-direction: row;
   align-items: center;
 }
-.scroll-text p {
+.scroll-text .menu-subpage-menu-container ul {
+  list-style-type: none;
+}
+.scroll-text .menu-subpage-menu-container ul li a {
   margin: 0 0 0 3rem;
   font-size: 33px;
   font-weight: 200;
+  text-decoration: none;
+  color: #eb6083;
+  border-bottom: #eb6083 solid 1px;
+  padding-bottom: 0.5rem;
 }
+.scroll-text .menu-subpage-menu-container ul li:hover a {
+  color: #8bb8ee;
+}
+.scroll-text .menu-subpage-menu-container ul li {
+  margin-bottom: 2rem;
+}
+
 .bar {
   display: flex;
   align-items: center;
@@ -369,12 +389,16 @@ body {
     display: none;
   }
 
-  .scroll-text p {
+  .scroll-text .menu-subpage-menu-container ul li a {
+    text-decoration: none;
     margin: 0;
     margin-bottom: 1.5rem;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 200;
     border-bottom: #eb6083 solid 1px;
+  }
+  .scroll-text .menu-subpage-menu-container ul li:hover a {
+    color: #eb6083;
   }
   .color-bar {
     height: auto;
@@ -441,7 +465,6 @@ body {
   }
   .color-bar {
     background-color: #eb6083;
-    height: 6rem;
   }
   #landing-img {
     height: 300px;

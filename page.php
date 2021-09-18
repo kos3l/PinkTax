@@ -7,9 +7,13 @@
                         </div>
                         <div class="col-lg-6 scroll-container">
                             <div class="inner-scroll-container">
-                                <div class="scroll-text"><img src="<?php the_field('arrow') ?>" alt=""> <p><?php the_field('scroll') ?></p></div>
-                                <div class="scroll-text"><img src="<?php the_field('arrow') ?>" alt=""> <p><?php the_field('scroll-2') ?></p></div>
-                                <div class="scroll-text"><img src="<?php the_field('arrow') ?>" alt=""> <p><?php the_field('scroll-3') ?></p></div>
+                            <?php
+                                $args = array(
+                                    'theme_location' => 'subpage'
+                                );
+                                ?>
+                                <div class="scroll-text"><?php wp_nav_menu( $args); ?></div>
+
                             </div>
                         </div>
                     </div>
@@ -27,13 +31,13 @@
                     </div>
                     <div class="row content-box">
                         <div class="col-lg-6" id="mobile-img" style="background-image: url(<?php the_field('main_image'); ?>);background-size:cover;background-position:80% 100%"></div>
-                        <div class="col-lg-6 section">
+                        <div class="col-lg-6 section" id="anchor1">
                             <p class="title"><?php the_field('main-text') ?></p>
                             <p class="intro" ><?php the_field('intro') ?></p>
                             <p class="body-text"><?php the_field('body') ?></p>
                         </div>
                     </div>
-                    <div class="row content-box">
+                    <div class="row content-box" id="anchor2">
                         <div class="col-lg-6 background section">
                             <p class="title"><?php the_field('main-text1') ?></p>
                             <p class="intro" id="white"><?php the_field('intro1') ?></p>
@@ -54,7 +58,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row headline">
+                    <div class="row headline" id="anchor3">
                         <div class="col-lg-6 headline-column">
                             <p class="title"><?php the_field('headline') ?></p>  <br>
                             <p class="intro"><?php the_field('undertext') ?></p>
